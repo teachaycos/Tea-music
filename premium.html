@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Салон Tea | ...</title> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="side-gradient left"></div>
+    <div class="side-gradient right"></div>
+
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <a href="index.html">TEA MUSIC</a>
+            </div>
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="index.html">🎧 Моя Музыка</a></li>
+                    <li><a href="new_releases.html">🔥 Новинки</a></li> 
+                    <li><a href="charts.html">📈 Чарты</a></li>
+                    <li><a href="artists.html">🎙️ Исполнители</a></li>
+                    <li><a href="genres.html">🎵 Жанры</a></li> 
+                </ul>
+            </nav>
+            <hr style="border-color: rgba(255, 0, 255, 0.3); margin: 20px 10px;">
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="favorites.html">❤️ Избранное</a></li>
+                    <li><a href="playlists.html">📜 Плейлисты</a></li>
+                    <li><a href="news.html">📰 Новости</a></li>
+                    <li><a href="premium.html" class="active">☕ Поддержать проект</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <a href="index.html" class="back-to-main-link">
+                ⬅️ Вернуться в Моя Музыка
+            </a>
+
+            <h1>☕ Поддержка и Донаты</h1>
+            <p style="color: #ccc; margin-bottom: 30px;">
+                Ваша помощь напрямую влияет на развитие проекта Tea Music Saloon!
+            </p>
+
+            <div class="donation-block">
+                <div class="donation-text">
+                    <h2>Спасибо за Вашу поддержку!</h2>
+                    <p>
+                        Tea Music Saloon — это полностью независимый проект. Каждый ваш вклад помогает нам покрывать расходы на хостинг и разработку новых функций.
+                    </p>
+                    <p>
+                        💖 **Куда идут Ваши средства:**
+                        <ul>
+                            <li>Оплата облачных серверов.</li>
+                            <li>Поддержка разработчика.</li>
+                            <li>Лицензирование контента.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="donation-cta">
+                    <h3>Выберите способ поддержки:</h3>
+                    
+                    <div class="payment-method">
+                        <span class="payment-icon">🏦</span>
+                        <h4>М-Банк</h4>
+                        <p class="account-number">Счет: 4177 4901 9406 0101</p>
+                        <button class="cta-button" onclick="copyAccount('4177490194060101')">Копировать счет</button>
+                    </div>
+
+                    <div class="payment-method">
+                        <span class="payment-icon">💳</span>
+                        <h4>О-Банк</h4>
+                        <p class="account-number">Счет: +996 704 120 522</p>
+                        <button class="cta-button" onclick="copyAccount('+996704120522')">Копировать счет</button>
+                    </div>
+
+                    <p style="font-size: 0.9em; margin-top: 20px; color: #aaa;">
+                        После перевода, пожалуйста, отправьте скриншот в наш Telegram-канал для благодарности!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="under-development static">
+                <h2>ℹ️ Примечание</h2>
+                <p>
+                    В будущем мы планируем добавить автоматизированную систему оплаты и благодарностей. Пока что используется ручной способ через перевод на указанные счета.
+                </p>
+            </div>
+            
+        </main>
+        
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>О нас</h3>
+                <p style="font-size:0.9em; max-width: 250px;">Tea Music Saloon – это место, где встречаются меломаны. Наша платформа создана для легкого доступа к новинкам и любимой музыке, сочетая стильный дизайн и удобный плеер.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Юридическая информация</h3>
+                <ul>
+                    <li style="font-size:0.9em; max-width: 250px; color: #fff;">Мы ценим вашу конфиденциальность. Tea Music Saloon не собирает и не передает ваши личные данные третьим лицам. Мы используем минимальное количество информации для обеспечения работы плеера и улучшения сервиса.</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Связь и Сообщество</h3>
+                <ul>
+                    <li><a href="mailto:abdytima56@gmail.com">✉️ Связаться (Email)</a></li>
+                    <li><a href="https://t.me/+F9UkB3qSuYQ5MWRi" target="_blank">🔗 Telegram-канал</a></li>
+                    <li><a href="https://discord.gg/NV8jJ2bQG" target="_blank">💬 Discord-сервер</a></li>
+                    <li><a href="#">FAQ и помощь</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Tea Music Saloon. Все права защищены.
+        </div>
+    </footer>
+
+    <div class="mini-player" id="miniPlayer" onclick="handlePlayerClick(event)" onmousedown="startDragging(event)" ondblclick="togglePlayerMode()">
+        <div class="progress-bar-container">
+            <span class="time-display" id="currentTime">0:00</span>
+            <div id="progressBar" onclick="seekTo(event)">
+                <div id="progress"></div>
+            </div>
+            <span class="time-display" id="durationTime">0:00</span>
+        </div>
+        
+        <div class="player__info">
+            <div class="player__cover" id="playerCover"></div>
+            <div class="player__details">
+                <h4 id="playerTitle">Нет выбранного трека</h4>
+                <p id="playerArtist">Нажмите на альбом для запуска</p>
+            </div>
+        </div>
+        <div class="player__controls">
+            <button class="player__button" onclick="prevTrack()">⏮️</button>
+            <button class="player__button play" id="playPauseBtn" onclick="togglePlay()">▶️</button>
+            <button class="player__button" onclick="nextTrack()">⏭️</button>
+        </div>
+        
+        <div class="player__volume" id="playerVolumeControl" onclick="toggleVolumeBar(event)">
+            <span class="volume-icon">🔉</span>
+            <div class="volume-bar-wrap">
+                <input type="range" min="0" max="100" value="70" onchange="setVolume(this.value)" oninput="setVolume(this.value)">
+            </div>
+            
+            <div class="player__actions-menu">
+                <button class="player__menu-dots" onclick="togglePlayerMenu(event, this)">...</button>
+                <div class="player__context-menu">
+                    <a href="#" onclick="actionAddToQueue(event, this, true)">▶️ Добавить трек в очередь</a>
+                    <a href="#" onclick="actionAddToPlaylist(event, this, true)">📜 Добавить трек в плейлист</a>
+                    <a href="#" onclick="actionToggleFavorite(event, this, true)">❤️ В избранное</a>
+                    <a href="#">ℹ️ Перейти к альбому</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" preload="auto"></audio>
+
+    <script src="script.js"></script>
+    
+    <script>
+        function copyAccount(accountNumber) {
+            // Удаляем пробелы для копирования чистого номера
+            const cleanNumber = accountNumber.replace(/ /g, ''); 
+            
+            navigator.clipboard.writeText(cleanNumber)
+                .then(() => {
+                    alert('Номер счета ' + cleanNumber + ' успешно скопирован!');
+                })
+                .catch(err => {
+                    console.error('Ошибка копирования:', err);
+                    alert('Не удалось скопировать счет. Попробуйте вручную.');
+                });
+        }
+    </script>
+
+    <script>
+        // Код для управления громкостью и плеером (сохранен без изменений)
+        function setVolume(value) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const volumeIcon = document.querySelector('.volume-icon');
+            audioPlayer.volume = value / 100;
+
+            if (value == 0) {
+                volumeIcon.innerText = '🔇';
+            } else if (value < 50) {
+                volumeIcon.innerText = '🔉';
+            } else {
+                volumeIcon.innerText = '🔊';
+            }
+        }
+        
+        let isVolumeBarOpen = false;
+        function toggleVolumeBar(event) {
+            event.stopPropagation();
+            const volumeBarWrap = document.querySelector('.volume-bar-wrap');
+            
+            if (isVolumeBarOpen) {
+                volumeBarWrap.classList.remove('open');
+                isVolumeBarOpen = false;
+            } else {
+                document.querySelectorAll('.context-menu, .player__context-menu').forEach(menu => {
+                    menu.classList.remove('show');
+                });
+                volumeBarWrap.classList.add('open');
+                isVolumeBarOpen = true;
+            }
+        }
+
+        function closeVolumeBarIfOpen(event) {
+            const volumeBarWrap = document.querySelector('.volume-bar-wrap');
+            const volumeControl = document.getElementById('playerVolumeControl');
+            
+            if (isVolumeBarOpen && volumeControl && !volumeControl.contains(event.target)) {
+                volumeBarWrap.classList.remove('open');
+                isVolumeBarOpen = false;
+            }
+        }
+        
+        window.onload = function() {
+            const preloader = document.querySelector('.preloader');
+            const body = document.body;
+            const volumeRange = document.getElementById('playerVolumeControl').querySelector('input[type="range"]');
+            const audioPlayer = document.getElementById('audioPlayer');
+
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                body.classList.add('loaded');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 500);
+            
+            if(volumeRange) {
+                audioPlayer.volume = volumeRange.value / 100;
+            }
+
+            if (typeof updateProgressBar !== 'undefined') {
+                audioPlayer.addEventListener('loadedmetadata', updateProgressBar);
+                audioPlayer.addEventListener('timeupdate', updateProgressBar);
+                audioPlayer.addEventListener('ended', nextTrack);
+            }
+            
+            document.addEventListener('click', closeVolumeBarIfOpen);
+        };
+    </script>
+</body>
+</html>
