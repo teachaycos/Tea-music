@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Салон Tea | ...</title> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="side-gradient left"></div>
+    <div class="side-gradient right"></div>
+
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <a href="index.html">TEA MUSIC</a>
+            </div>
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="index.html">🎧 Моя Музыка</a></li>
+                    <li><a href="new_releases.html">🔥 Новинки</a></li> 
+                    <li><a href="charts.html">📈 Чарты</a></li>
+                    <li><a href="artists.html">🎙️ Исполнители</a></li>
+                    <li><a href="genres.html" class="active">🎵 Жанры</a></li> 
+                </ul>
+            </nav>
+            <hr style="border-color: rgba(255, 0, 255, 0.3); margin: 20px 10px;">
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="favorites.html">❤️ Избранное</a></li>
+                    <li><a href="playlists.html">📜 Плейлисты</a></li>
+                    <li><a href="news.html">📰 Новости</a></li>
+                    <li><a href="premium.html">☕ Поддержать проект</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <a href="index.html" class="back-to-main-link">
+                ⬅️ Вернуться в Моя Музыка
+            </a>
+
+            <h1>🎵 Исследуйте Жанры</h1>
+            <p style="color: #ccc; margin-bottom: 30px;">
+                Погрузитесь в специфичные стили музыки, представленные в нашей библиотеке. Нажмите на карточку, чтобы посмотреть плейлист или пример в YouTube (откроется в новой вкладке).
+            </p>
+
+            <div class="genre-grid-layout">
+                
+                <a href="https://www.youtube.com/watch?v=7T1xp3k-ZLw" target="_blank" class="genre-card">
+                    <span class="genre-icon">🎧</span>
+                    <h3>Phonk/Funk</h3>
+                    <p>
+                        Современный поджанр хип-хопа, вдохновленный мемфис-рэпом 90-х. Характеризуется lo-fi звучанием, искаженными вокальными семплами, тяжелыми басами и дрифт-культурой.
+                    </p>
+                    <div class="genre-examples">Ключевые элементы: lo-fi, дрифт, искаженный вокал, cowbell.</div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=xve6mJYT270&t=2054s" target="_blank" class="genre-card">
+                    <span class="genre-icon">🔨</span>
+                    <h3>Russian Hardstyle</h3>
+                    <p>
+                        Жесткий, быстрый стиль электронной музыки, популярный в Восточной Европе. Сочетает элементы хардкора, техно и часто использует русскоязычные вокальные вставки.
+                    </p>
+                    <div class="genre-examples">Ключевые элементы: высокий BPM, синтезаторы, хард-кик, атмосфера рейва.</div>
+                </a>
+                
+                <a href="https://www.youtube.com/watch?v=YA3lychj6Oc" target="_blank" class="genre-card">
+                    <span class="genre-icon">🎸</span>
+                    <h3>Rock</h3>
+                    <p>
+                        Широкий жанр, берущий начало в рок-н-ролле 50-х. Основные инструменты: электрогитара, бас-гитара и барабаны. Включает множество поджанров от классики до метала.
+                    </p>
+                    <div class="genre-examples">Ключевые элементы: гитарные риффы, сильный вокал, выразительная лирика.</div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=lvJo07YZIfI" target="_blank" class="genre-card">
+                    <span class="genre-icon">🌙</span>
+                    <h3>Nightcore music</h3>
+                    <p>
+                        Музыкальный стиль, характеризующийся увеличенной скоростью воспроизведения трека (пич-шифтинг) и высоким вокалом. Часто создается из ремиксов EDM, транса или поп-песен.
+                    </p>
+                    <div class="genre-examples">Ключевые элементы: быстрый темп, высокий питч вокала, ремиксы.</div>
+                </a>
+                
+                 <a href="https://www.youtube.com/watch?v=ZKFwQFBwQFU" target="_blank" class="genre-card">
+                    <span class="genre-icon">🎻</span>
+                    <h3>Classical</h3>
+                    <p>
+                        Музыкальная традиция, охватывающая несколько веков (от Барокко до Романтизма). Отличается формальной сложностью, оркестровым звучанием и глубоким эмоциональным содержанием.
+                    </p>
+                    <div class="genre-examples">Ключевые элементы: симфонии, оркестр, сложная гармония, оперный вокал.</div>
+                </a>
+                
+            </div>
+            
+        </main>
+        
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>О нас</h3>
+                <p style="font-size:0.9em; max-width: 250px;">Tea Music Saloon – это место, где встречаются меломаны. Наша платформа создана для легкого доступа к новинкам и любимой музыке, сочетая стильный дизайн и удобный плеер.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Юридическая информация</h3>
+                <ul>
+                    <li style="font-size:0.9em; max-width: 250px; color: #fff;">Мы ценим вашу конфиденциальность. Tea Music Saloon не собирает и не передает ваши личные данные третьим лицам. Мы используем минимальное количество информации для обеспечения работы плеера и улучшения сервиса.</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Связь и Сообщество</h3>
+                <ul>
+                    <li><a href="mailto:abdytima56@gmail.com">✉️ Связаться (Email)</a></li>
+                    <li><a href="https://t.me/+F9UkB3qSuYQ5MWRi" target="_blank">🔗 Telegram-канал</a></li>
+                    <li><a href="https://discord.gg/NV8jJ2bQG" target="_blank">💬 Discord-сервер</a></li>
+                    <li><a href="#">FAQ и помощь</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Tea Music Saloon. Все права защищены.
+        </div>
+    </footer>
+
+    <div class="mini-player" id="miniPlayer" onclick="handlePlayerClick(event)" onmousedown="startDragging(event)" ondblclick="togglePlayerMode()">
+        <div class="progress-bar-container">
+            <span class="time-display" id="currentTime">0:00</span>
+            <div id="progressBar" onclick="seekTo(event)">
+                <div id="progress"></div>
+            </div>
+            <span class="time-display" id="durationTime">0:00</span>
+        </div>
+        
+        <div class="player__info">
+            <div class="player__cover" id="playerCover"></div>
+            <div class="player__details">
+                <h4 id="playerTitle">Нет выбранного трека</h4>
+                <p id="playerArtist">Нажмите на альбом для запуска</p>
+            </div>
+        </div>
+        <div class="player__controls">
+            <button class="player__button" onclick="prevTrack()">⏮️</button>
+            <button class="player__button play" id="playPauseBtn" onclick="togglePlay()">▶️</button>
+            <button class="player__button" onclick="nextTrack()">⏭️</button>
+        </div>
+        
+        <div class="player__volume" id="playerVolumeControl" onclick="toggleVolumeBar(event)">
+            <span class="volume-icon">🔉</span>
+            <div class="volume-bar-wrap">
+                <input type="range" min="0" max="100" value="70" onchange="setVolume(this.value)" oninput="setVolume(this.value)">
+            </div>
+            
+            <div class="player__actions-menu">
+                <button class="player__menu-dots" onclick="togglePlayerMenu(event, this)">...</button>
+                <div class="player__context-menu">
+                    <a href="#" onclick="actionAddToQueue(event, this, true)">▶️ Добавить трек в очередь</a>
+                    <a href="#" onclick="actionAddToPlaylist(event, this, true)">📜 Добавить трек в плейлист</a>
+                    <a href="#" onclick="actionToggleFavorite(event, this, true)">❤️ В избранное</a>
+                    <a href="#">ℹ️ Перейти к альбому</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" preload="auto"></audio>
+
+    <script src="script.js"></script>
+
+    <script>
+        function setVolume(value) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const volumeIcon = document.querySelector('.volume-icon');
+            audioPlayer.volume = value / 100;
+
+            if (value == 0) {
+                volumeIcon.innerText = '🔇';
+            } else if (value < 50) {
+                volumeIcon.innerText = '🔉';
+            } else {
+                volumeIcon.innerText = '🔊';
+            }
+        }
+        
+        let isVolumeBarOpen = false;
+        function toggleVolumeBar(event) {
+            event.stopPropagation();
+            const volumeBarWrap = document.querySelector('.volume-bar-wrap');
+            
+            if (isVolumeBarOpen) {
+                volumeBarWrap.classList.remove('open');
+                isVolumeBarOpen = false;
+            } else {
+                document.querySelectorAll('.context-menu, .player__context-menu').forEach(menu => {
+                    menu.classList.remove('show');
+                });
+                volumeBarWrap.classList.add('open');
+                isVolumeBarOpen = true;
+            }
+        }
+
+        function closeVolumeBarIfOpen(event) {
+            const volumeBarWrap = document.querySelector('.volume-bar-wrap');
+            const volumeControl = document.getElementById('playerVolumeControl');
+            
+            if (isVolumeBarOpen && volumeControl && !volumeControl.contains(event.target)) {
+                volumeBarWrap.classList.remove('open');
+                isVolumeBarOpen = false;
+            }
+        }
+        
+        window.onload = function() {
+            const preloader = document.querySelector('.preloader');
+            const body = document.body;
+            const volumeRange = document.getElementById('playerVolumeControl').querySelector('input[type="range"]');
+            const audioPlayer = document.getElementById('audioPlayer');
+
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                body.classList.add('loaded');
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 500);
+            
+            if(volumeRange) {
+                audioPlayer.volume = volumeRange.value / 100;
+            }
+
+            if (typeof updateProgressBar !== 'undefined') {
+                audioPlayer.addEventListener('loadedmetadata', updateProgressBar);
+                audioPlayer.addEventListener('timeupdate', updateProgressBar);
+                audioPlayer.addEventListener('ended', nextTrack);
+            }
+            
+            document.addEventListener('click', closeVolumeBarIfOpen);
+        };
+    </script>
+</body>
+</html>
