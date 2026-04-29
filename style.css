@@ -1644,3 +1644,37 @@ button[onclick="openDefaultAvatarsModal()"]:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 12px rgba(255,0,255,0.4);
 }
+
+.player {
+    width: 95%;        /* Занимает почти всю ширину на мобилке */
+    max-width: 400px;  /* Но на компе не шире 400px */
+    margin: 20px auto; /* Центрируем */
+    padding: 15px;
+    box-sizing: border-box; /* Чтобы отступы не раздували плеер */
+}
+
+/* Сделаем картинку гибкой */
+.player img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    /* Увеличиваем кнопки, чтобы по ним было легко попасть пальцем */
+    .controls button {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    /* Делаем ползунок громкости и прогресса толще */
+    input[type="range"] {
+        height: 12px;
+        margin: 15px 0;
+    }
+
+    /* Название трека чуть меньше, чтобы не переносилось криво */
+    .song-title {
+        font-size: 1.1rem;
+    }
+}
